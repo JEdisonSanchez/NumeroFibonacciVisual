@@ -31,6 +31,9 @@
             this.numeroResultante = numeroResultante;
         }
 
+        /// <summary>
+        /// Método que permiter mostrar la serie Fibonacci del numero ingresado
+        /// </summary>
         public void imprimirSerieFibonacci()
         {
             Console.WriteLine("-----------------------");
@@ -44,6 +47,9 @@
             Console.WriteLine("-----------------------");
         }
 
+        /// <summary>
+        /// Método que permiter mostrar si el ultimo número de la serie es primo
+        /// </summary>
         public void imprimirPrimo()
         {
             if (this.esPrimo(this.numeroResultante))
@@ -56,6 +62,10 @@
             }
         }
 
+        /// <summary>
+        /// Metodo que al enviarle por parametro un número, nos devuelve un valor
+        /// boolean el cual indica si es primo(true) o no es primo(false)
+        /// </summary>
         private bool esPrimo(int numero)
         {
             int contador = 0;
@@ -74,6 +84,10 @@
             return esPrimo;
         }
 
+        /// <summary>
+        /// Metodo que al enviarle por parametro un número, nos devuelve el 
+        /// siguiente número de la serie fibonacci
+        /// </summary>
         private int calcularFibonacci(int numero)
         {
             switch (numero)
